@@ -24,4 +24,13 @@ class GeneralAlgorithmsTest {
         assertTrue(expected3);
     }
 
+    @Test
+    void checkPalindrome(){
+        boolean expected = obj.checkPalindrome("abcba");
+        assertTrue(expected);
+
+        boolean expected1 = obj.checkPalindrome("abccba");
+        assertTrue(expected1);
+    }
+
 }

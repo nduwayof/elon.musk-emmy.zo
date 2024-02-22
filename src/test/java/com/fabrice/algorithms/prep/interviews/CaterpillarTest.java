@@ -11,17 +11,17 @@ class CaterpillarTest {
     Caterpillar obj = new Caterpillar();
 
     @Test
-    void getConcatenation(){
-        List<String> actual = obj.mapDigitsToLetter("23");
-        List<String> expected = List.of("ad","ae","af","bd","be","bf","cd","ce","cf");
-        assertEquals(expected, actual);
-    }
-
-    @Test
     @DisplayName("Test - with input 2")
     void getConcatenationWhenInputIs2(){
         List<String> actual = obj.mapDigitsToLetter("2");
         List<String> expected = List.of("a", "b","c");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void getConcatenation(){
+        List<String> actual = obj.mapDigitsToLetter("23");
+        List<String> expected = List.of("ad","ae","af","bd","be","bf","cd","ce","cf");
         assertEquals(expected, actual);
     }
 

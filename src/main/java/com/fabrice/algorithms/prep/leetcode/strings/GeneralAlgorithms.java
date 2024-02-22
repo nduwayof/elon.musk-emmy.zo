@@ -8,6 +8,8 @@ public class GeneralAlgorithms {
      *  reminder = 121 % 10 = 1 / 12%10 = 2
      *  reverse = reverse * 10 + reminder
      *  121/10 = 1
+     *  Time 0(n)
+     *  Space 0(1)
      **/
     public boolean palindrome(int number) {
         int reverse = 0;
@@ -18,5 +20,13 @@ public class GeneralAlgorithms {
             temp = temp/10;
         }
         return number == reverse;
+    }
+
+
+    /**
+     * StringBuilder builder = new StringBuilder(s);
+     return builder.reverse().toString().equals(s);*/
+    public boolean checkPalindrome(String s) {
+        return false;
     }
 }
